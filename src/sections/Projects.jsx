@@ -53,7 +53,7 @@ export default function Projects() {
           <h2 className="text-4xl font-bold text-white">Projects</h2>
         </motion.div>
 
-        {/* Project Cards */}
+        {/* Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <motion.div
@@ -63,14 +63,14 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -6 }}
-              className={`relative flex flex-col p-6 rounded-2xl border transition-colors duration-300 cursor-default
+              className={`relative flex flex-col p-6 rounded-2xl border transition-colors duration-300
                 ${
                   project.featured
                     ? "border-[#7c3aed] bg-[#7c3aed]/5"
                     : "border-gray-800 bg-[#0d1b2a] hover:border-[#7c3aed]/50"
                 }`}
             >
-              {/* Featured Badge */}
+              {/* Featured */}
               {project.featured && (
                 <span className="absolute top-4 right-4 text-xs font-mono text-[#7c3aed] border border-[#7c3aed] rounded-full px-3 py-1">
                   featured
@@ -105,7 +105,7 @@ export default function Projects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                  className="cursor-target flex items-center gap-2 text-gray-400 hover:text-white text-sm transition-colors duration-200"
                 >
                   <FaGithub className="text-lg" />
                   Code
@@ -116,7 +116,7 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-400 hover:text-[#7c3aed] text-sm transition-colors duration-200"
+                    className="cursor-target flex items-center gap-2 text-gray-400 hover:text-[#7c3aed] text-sm transition-colors duration-200"
                   >
                     <FaExternalLinkAlt className="text-sm" />
                     Live Demo

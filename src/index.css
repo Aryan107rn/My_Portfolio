@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+
 
 body {
-  background-color: #f8fafc;
-  color: #0f172a;
+  background-color: #0d1b2a;
+  color: #ffffff;
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;

@@ -44,7 +44,7 @@ export default function Hero() {
       id="hero"
       className="min-h-screen flex items-center justify-between px-8 md:px-20 pt-24"
     >
-      {/* Left side */}
+      {/* Left */}
       <div className="max-w-xl">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -91,23 +91,25 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="flex gap-4 flex-wrap"
         >
+          {/* Button 1 */}
           <a
             href="#projects"
-            className="px-6 py-3 bg-[#7c3aed] text-white rounded-lg font-medium hover:bg-[#6d28d9] hover:scale-105 transition-all duration-200"
+            className="cursor-target px-6 py-3 bg-[#7c3aed] text-white rounded-lg font-medium hover:bg-[#6d28d9] hover:scale-105 transition-all duration-200"
           >
             View Projects
           </a>
 
+          {/* Button 2 */}
           <a
             href="#contact"
-            className="px-6 py-3 border border-[#7c3aed] text-[#7c3aed] rounded-lg font-medium hover:bg-[#7c3aed]/10 hover:scale-105 transition-all duration-200"
+            className="cursor-target px-6 py-3 border border-[#7c3aed] text-[#7c3aed] rounded-lg font-medium hover:bg-[#7c3aed]/10 hover:scale-105 transition-all duration-200"
           >
             Contact Me
           </a>
         </motion.div>
       </div>
 
-      {/* Right side */}
+      {/* Right */}
       <motion.div
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
