@@ -31,7 +31,10 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="min-h-screen flex items-center px-8 md:px-20 py-20">
+    <section
+      id="contact"
+      className="min-h-screen flex items-center px-8 md:px-20 py-20"
+    >
       <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 gap-16 items-start">
 
         {/* Left */}
@@ -44,15 +47,19 @@ export default function Contact() {
           <p className="text-[#7c3aed] font-mono text-sm mb-3 tracking-widest">
             &gt; contact.sh
           </p>
-          <h2 className="text-4xl font-bold text-white mb-6">Get In Touch</h2>
 
-          <p className="text-gray-400 leading-relaxed mb-4">
+          <h2 className="text-4xl font-bold text-[#0f172a] dark:text-white mb-6">
+            Get In Touch
+          </h2>
+
+          {/* Paragraphs */}
+          <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
             I&apos;m currently open to fresher opportunities in Web Development
             and DevOps. If you have a role, project, or just want to connect —
             my inbox is open.
           </p>
 
-          <p className="text-gray-400 leading-relaxed mb-10">
+          <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-10">
             I typically respond within 24 hours.
           </p>
 
@@ -80,7 +87,7 @@ export default function Contact() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-gray-400 hover:text-[#7c3aed] transition-colors duration-200 group"
+                className="flex items-center gap-4 text-gray-500 dark:text-gray-400 hover:text-[#7c3aed] transition-colors duration-200 group"
               >
                 <span className="text-xl group-hover:text-[#7c3aed] transition-colors duration-200">
                   {link.icon}
@@ -99,8 +106,10 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+
+            {/* Input fields */}
             <div>
-              <label className="text-gray-400 text-sm font-mono mb-2 block">
+              <label className="text-gray-500 dark:text-gray-400 text-sm font-mono mb-2 block">
                 Name
               </label>
               <input
@@ -108,12 +117,12 @@ export default function Contact() {
                 name="name"
                 required
                 placeholder="Your name"
-                className="w-full px-4 py-3 rounded-lg bg-[#0d1b2a] border border-gray-800 text-white placeholder-gray-600 focus:outline-none focus:border-[#7c3aed]"
+                className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-[#0d1b2a] border border-gray-200 dark:border-gray-800 text-[#0f172a] dark:text-white placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:border-[#7c3aed] transition-colors duration-200"
               />
             </div>
 
             <div>
-              <label className="text-gray-400 text-sm font-mono mb-2 block">
+              <label className="text-gray-500 dark:text-gray-400 text-sm font-mono mb-2 block">
                 Email
               </label>
               <input
@@ -121,12 +130,12 @@ export default function Contact() {
                 name="email"
                 required
                 placeholder="your@email.com"
-                className="w-full px-4 py-3 rounded-lg bg-[#0d1b2a] border border-gray-800 text-white placeholder-gray-600 focus:outline-none focus:border-[#7c3aed]"
+                className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-[#0d1b2a] border border-gray-200 dark:border-gray-800 text-[#0f172a] dark:text-white placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:border-[#7c3aed] transition-colors duration-200"
               />
             </div>
 
             <div>
-              <label className="text-gray-400 text-sm font-mono mb-2 block">
+              <label className="text-gray-500 dark:text-gray-400 text-sm font-mono mb-2 block">
                 Message
               </label>
               <textarea
@@ -134,7 +143,7 @@ export default function Contact() {
                 required
                 rows={5}
                 placeholder="What's on your mind?"
-                className="w-full px-4 py-3 rounded-lg bg-[#0d1b2a] border border-gray-800 text-white placeholder-gray-600 focus:outline-none focus:border-[#7c3aed] resize-none"
+                className="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-[#0d1b2a] border border-gray-200 dark:border-gray-800 text-[#0f172a] dark:text-white placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:border-[#7c3aed] transition-colors duration-200 resize-none"
               />
             </div>
 
@@ -147,13 +156,13 @@ export default function Contact() {
             </button>
 
             {status === "success" && (
-              <p className="text-green-400 font-mono text-sm text-center">
+              <p className="text-green-500 font-mono text-sm text-center">
                 Message sent successfully!
               </p>
             )}
 
             {status === "error" && (
-              <p className="text-red-400 font-mono text-sm text-center">
+              <p className="text-red-500 font-mono text-sm text-center">
                 Something went wrong. Try again.
               </p>
             )}

@@ -59,7 +59,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-5xl md:text-6xl font-bold text-white mb-4"
+          className="text-5xl md:text-6xl font-bold text-[#0f172a] dark:text-white mb-4"
         >
           Aryan
         </motion.h1>
@@ -68,7 +68,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-2xl md:text-3xl font-mono text-gray-300 mb-6 h-10"
+          className="text-2xl md:text-3xl font-mono text-gray-600 dark:text-gray-300 mb-6 h-10"
         >
           <span className="text-[#7c3aed]">&gt;</span>{" "}
           {displayed}
@@ -79,7 +79,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="text-gray-400 text-lg mb-10 leading-relaxed"
+          className="text-gray-500 dark:text-gray-400 text-lg mb-10 leading-relaxed"
         >
           Building clean, fast, and functional web experiences.
           Currently levelling up in React and DevOps.
@@ -93,14 +93,14 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="px-6 py-3 bg-[#7c3aed] text-white rounded-lg font-medium hover:bg-[#6d28d9] transition-colors duration-200"
+            className="px-6 py-3 bg-[#7c3aed] text-white rounded-lg font-medium hover:bg-[#6d28d9] hover:scale-105 transition-all duration-200"
           >
             View Projects
           </a>
 
           <a
             href="#contact"
-            className="px-6 py-3 border border-[#7c3aed] text-[#7c3aed] rounded-lg font-medium hover:bg-[#7c3aed]/10 transition-colors duration-200"
+            className="px-6 py-3 border border-[#7c3aed] text-[#7c3aed] rounded-lg font-medium hover:bg-[#7c3aed]/10 hover:scale-105 transition-all duration-200"
           >
             Contact Me
           </a>
@@ -112,7 +112,7 @@ export default function Hero() {
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="hidden md:block font-mono text-sm text-gray-600 leading-relaxed select-none"
+        className="hidden md:block font-mono text-sm text-gray-400 dark:text-gray-600 leading-relaxed select-none"
       >
         <p>
           <span className="text-[#7c3aed]">const</span>{" "}
