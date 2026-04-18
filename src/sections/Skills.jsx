@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import {
-  FaReact, FaNodeJs, FaGitAlt, FaGithub, FaLinux, FaDocker
+  FaReact, FaNodeJs, FaGitAlt, FaGithub, FaLinux
 } from "react-icons/fa"
 import {
   SiTailwindcss, SiJavascript, SiTypescript,
@@ -24,7 +24,6 @@ const skills = [
       { name: "Node.js", icon: <FaNodeJs />, color: "#68A063" },
       { name: "Git", icon: <FaGitAlt />, color: "#F05032" },
       { name: "GitHub", icon: <FaGithub />, color: "#ffffff" },
-      { name: "Docker", icon: <FaDocker />, color: "#2496ED" },
       { name: "Linux", icon: <FaLinux />, color: "#FCC624" },
     ],
   },
@@ -73,12 +72,10 @@ export default function Skills() {
               transition={{ duration: 0.6, delay: groupIndex * 0.1 }}
               viewport={{ once: true }}
             >
-              {/* Category */}
               <p className="text-gray-400 dark:text-gray-500 font-mono text-xs mb-6 tracking-widest uppercase">
                 {group.category}
               </p>
 
-              {/* Skills */}
               <div className="flex flex-wrap gap-4">
                 {group.items.map((skill) => (
                   <motion.div

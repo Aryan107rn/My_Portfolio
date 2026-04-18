@@ -52,11 +52,10 @@ export default function Contact() {
             Get In Touch
           </h2>
 
-          {/* Paragraphs */}
-          <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
-            I&apos;m currently open to fresher opportunities in Web Development
-            and DevOps. If you have a role, project, or just want to connect —
-            my inbox is open.
+          {/* Updated paragraph */}
+          <p className="text-gray-400 leading-relaxed mb-4">
+            I&apos;m actively looking for fresher roles in full stack development.
+            Open to opportunities, collaborations, or interesting projects — let&apos;s connect.
           </p>
 
           <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-10">
@@ -78,7 +77,7 @@ export default function Contact() {
               },
               {
                 icon: <FaLinkedin />,
-                label: "linkedin.com/in/Aryan Nakade",
+                label: "linkedin.com/in/aryan-nakade",
                 href: "https://www.linkedin.com/in/aryan-nakade-046202338/",
               },
             ].map((link) => (
@@ -107,7 +106,6 @@ export default function Contact() {
         >
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
 
-            {/* Input fields */}
             <div>
               <label className="text-gray-500 dark:text-gray-400 text-sm font-mono mb-2 block">
                 Name

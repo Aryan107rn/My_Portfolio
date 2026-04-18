@@ -8,7 +8,7 @@ export default function About() {
     >
       <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-        {/* Left — image placeholder */}
+        {/* Left — image */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -21,7 +21,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Right — text content */}
+        {/* Right — content */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -36,29 +36,30 @@ export default function About() {
             About Me
           </h2>
 
-          <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
-            Hey! I&apos;m Aryan, a self-taught developer based in Nagpur, India.
-            I&apos;m passionate about building clean, fast, and functional web
-            experiences that actually solve problems.
+          {/* Updated paragraphs */}
+          <p className="text-gray-400 leading-relaxed mb-4">
+  Hey! I&apos;m Aryan, a self-taught developer based in Nagpur, India.
+  I focus on building clean, fast, and functional web applications that solve real-world problems.
+</p>
+
+          <p className="text-gray-400 leading-relaxed mb-4">
+            Currently levelling up in React, DSA, and exploring the world of
+            DevOps and Cloud — learning how modern systems are built,
+            deployed, and scaled.
           </p>
 
-          <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
-            Currently levelling up my skills in React, Tailwind, and DevOps —
-            with a goal of landing my first dev role and growing toward
-            senior-level work in the next few years.
+          <p className="text-gray-400 leading-relaxed mb-8">
+            When I&apos;m not coding, I&apos;m deep into LeetCode problems,
+            tweaking my Linux setup (EndeavourOS), or exploring new tools
+            and technologies.
           </p>
 
-          <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-8">
-            When I&apos;m not coding, I&apos;m exploring Linux, tinkering with
-            my Endeavour OS setup, or deep in DSA problems on LeetCode.
-          </p>
-
-          {/* Quick facts */}
+          {/* Updated quick facts */}
           <div className="grid grid-cols-2 gap-4">
             {[
               { label: "Based in", value: "Nagpur, India" },
-              { label: "Focus", value: "Web + DevOps" },
-              { label: "Stack", value: "React, Tailwind" },
+              { label: "Focus", value: "Full Stack Dev" },
+              { label: "Exploring", value: "DevOps & Cloud" },
               { label: "Status", value: "Open to work" },
             ].map((item) => (
               <div

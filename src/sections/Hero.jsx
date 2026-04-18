@@ -1,12 +1,7 @@
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 
-const roles = [
-  "Web Developer",
-  "React Developer",
-  "Frontend Developer",
-  "DevOps Learner",
-]
+const roles = ["Full Stack Developer", "DSA Learner", "DevOps & Cloud Learner"]
 
 export default function Hero() {
   const [currentRole, setCurrentRole] = useState(0)
@@ -20,7 +15,7 @@ export default function Hero() {
     if (typing) {
       if (displayed.length < role.length) {
         timeout = setTimeout(() => {
-          setDisplayed((prev) => role.slice(0, prev.length + 1))
+          setDisplayed(role.slice(0, displayed.length + 1))
         }, 80)
       } else {
         timeout = setTimeout(() => setTyping(false), 1500)
@@ -28,7 +23,7 @@ export default function Hero() {
     } else {
       if (displayed.length > 0) {
         timeout = setTimeout(() => {
-          setDisplayed((prev) => prev.slice(0, -1))
+          setDisplayed(displayed.slice(0, -1))
         }, 40)
       } else {
         setCurrentRole((prev) => (prev + 1) % roles.length)
@@ -81,8 +76,8 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="text-gray-500 dark:text-gray-400 text-lg mb-10 leading-relaxed"
         >
-          Building clean, fast, and functional web experiences.
-          Currently levelling up in React and DevOps.
+          Building fast, scalable web applications with clean UI and solid backend systems.
+          Currently focused on React, Node.js, and PostgreSQL.
         </motion.p>
 
         <motion.div
@@ -91,7 +86,6 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="flex gap-4 flex-wrap"
         >
-          {/* Button 1 */}
           <a
             href="#projects"
             className="cursor-target px-6 py-3 bg-[#7c3aed] text-white rounded-lg font-medium hover:bg-[#6d28d9] hover:scale-105 transition-all duration-200"
@@ -99,7 +93,6 @@ export default function Hero() {
             View Projects
           </a>
 
-          {/* Button 2 */}
           <a
             href="#contact"
             className="cursor-target px-6 py-3 border border-[#7c3aed] text-[#7c3aed] rounded-lg font-medium hover:bg-[#7c3aed]/10 hover:scale-105 transition-all duration-200"
@@ -120,23 +113,31 @@ export default function Hero() {
           <span className="text-[#7c3aed]">const</span>{" "}
           <span className="text-blue-400">developer</span> = {"{"}
         </p>
+
         <p>
           &nbsp;&nbsp;name:{" "}
           <span className="text-green-400">"Aryan"</span>,
         </p>
+
+        <p>&nbsp;&nbsp;role: <span className="text-green-400">&quot;Full Stack Developer&quot;</span>,</p>
+
         <p>
-          &nbsp;&nbsp;role:{" "}
-          <span className="text-green-400">"Frontend Dev"</span>,
+          &nbsp;&nbsp;focus:{" "}
+          <span className="text-green-400">"React + Backend APIs"</span>,
         </p>
+
         <p>&nbsp;&nbsp;stack: [</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;"React",</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;"Tailwind",</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;"Node.js",</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;"PostgreSQL",</p>
         <p>&nbsp;&nbsp;],</p>
+
         <p>
           &nbsp;&nbsp;available:{" "}
           <span className="text-orange-400">true</span>,
         </p>
+
         <p>{"}"}</p>
       </motion.div>
     </section>
