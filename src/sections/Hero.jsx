@@ -80,25 +80,44 @@ export default function Hero() {
           Currently focused on React, Node.js, and PostgreSQL.
         </motion.p>
 
+        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
           className="flex gap-4 flex-wrap"
         >
-          <a
+          {/* View Projects */}
+          <motion.a
             href="#projects"
-            className="cursor-target px-6 py-3 bg-[#7c3aed] text-white rounded-lg font-medium hover:bg-[#6d28d9] hover:scale-105 transition-all duration-200"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            className="cursor-target px-6 py-3 bg-[#7c3aed] text-white rounded-lg font-medium hover:bg-[#6d28d9] transition-colors duration-200"
           >
             View Projects
-          </a>
+          </motion.a>
 
-          <a
+          {/* Contact */}
+          <motion.a
             href="#contact"
-            className="cursor-target px-6 py-3 border border-[#7c3aed] text-[#7c3aed] rounded-lg font-medium hover:bg-[#7c3aed]/10 hover:scale-105 transition-all duration-200"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            className="cursor-target px-6 py-3 border border-[#7c3aed] text-[#7c3aed] rounded-lg font-medium hover:bg-[#7c3aed]/10 transition-colors duration-200"
           >
             Contact Me
-          </a>
+          </motion.a>
+
+          {/* Resume */}
+          <motion.a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.97 }}
+  className="cursor-target px-6 py-3 border border-[#7c3aed] text-[#7c3aed] rounded-lg font-medium hover:bg-[#7c3aed]/10 transition-all duration-200"
+>
+  Resume
+</motion.a>
         </motion.div>
       </div>
 
@@ -119,7 +138,10 @@ export default function Hero() {
           <span className="text-green-400">"Aryan"</span>,
         </p>
 
-        <p>&nbsp;&nbsp;role: <span className="text-green-400">&quot;Full Stack Developer&quot;</span>,</p>
+        <p>
+          &nbsp;&nbsp;role:{" "}
+          <span className="text-green-400">"Full Stack Developer"</span>,
+        </p>
 
         <p>
           &nbsp;&nbsp;focus:{" "}

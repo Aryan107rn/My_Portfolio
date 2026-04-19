@@ -36,25 +36,23 @@ export default function About() {
             About Me
           </h2>
 
-          {/* Updated paragraphs */}
           <p className="text-gray-400 leading-relaxed mb-4">
-  Hey! I&apos;m Aryan, a self-taught developer based in Nagpur, India.
-  I focus on building clean, fast, and functional web applications that solve real-world problems.
-</p>
-
-          <p className="text-gray-400 leading-relaxed mb-4">
-            Currently levelling up in React, DSA, and exploring the world of
-            DevOps and Cloud — learning how modern systems are built,
-            deployed, and scaled.
+            Hey! I&apos;m Aryan, a self-taught developer based in Nagpur, India.
+            I focus on building clean, fast, and functional web applications that solve real-world problems.
           </p>
 
+          <p className="text-gray-400 leading-relaxed mb-4">
+            Currently levelling up in React, DSA, and exploring DevOps and Cloud —
+            learning how modern systems are built, deployed, and scaled.
+          </p>
+
+          {/* Updated memorable line */}
           <p className="text-gray-400 leading-relaxed mb-8">
-            When I&apos;m not coding, I&apos;m deep into LeetCode problems,
-            tweaking my Linux setup (EndeavourOS), or exploring new tools
-            and technologies.
+            When I&apos;m not coding, I&apos;m focused on understanding how things actually work —
+            and pushing myself to get 100x better over time.
           </p>
 
-          {/* Updated quick facts */}
+          {/* Quick facts */}
           <div className="grid grid-cols-2 gap-4">
             {[
               { label: "Based in", value: "Nagpur, India" },

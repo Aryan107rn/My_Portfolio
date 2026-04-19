@@ -44,6 +44,18 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+
+          {/* Resume Button (Desktop) */}
+          <li>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-target px-4 py-2 border border-[#7c3aed] text-[#7c3aed] rounded-lg text-sm font-medium hover:bg-[#7c3aed] hover:text-white transition-all duration-200"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         {/* Mobile hamburger */}
@@ -75,6 +87,16 @@ export default function Navbar() {
                 {item}
               </a>
             ))}
+
+            {/* Resume Button (Mobile Styled) */}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 border border-[#7c3aed] text-[#7c3aed] rounded-lg text-sm font-medium text-center hover:bg-[#7c3aed] hover:text-white transition-all duration-200"
+            >
+              Resume
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
