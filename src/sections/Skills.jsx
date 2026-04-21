@@ -58,7 +58,7 @@ export default function Skills() {
           </p>
 
           <h2 className="text-4xl font-bold text-[#0f172a] dark:text-white">
-            Skills & Technology
+          Technology & FrameWorks
           </h2>
         </motion.div>
 
