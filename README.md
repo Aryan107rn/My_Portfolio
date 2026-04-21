@@ -1,16 +1,65 @@
-# React + Vite
+# Aryan Nakade – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website where I showcase my projects and what I’ve been working on.
 
-Currently, two official plugins are available:
+Built it to have a clean place to share my work instead of just dumping links on GitHub.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Live
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+----will be live soon----
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What’s inside
+
+* Projects I’ve built with short descriptions and links
+* Basic info about me and what I’m focusing on
+* Contact section (so people can actually reach out)
+* Fully responsive (works on mobile too)
+
+---
+
+## Tech used
+
+* React + Vite
+* Tailwind CSS
+
+
+---
+
+## Why I built this
+
+I wanted a single place to:
+
+* Track my progress
+* Showcase my skills
+* Present projects properly
+
+
+---
+
+## Running locally
+
+```bash
+git clone https://github.com/Aryan107rn/My_Portfolio
+cd portfolio
+npm install
+npm run dev
+```
+
+---
+
+## Things to improve
+
+* Add a blog section
+* Better animations (without killing performance)
+* Maybe an admin panel to update projects
+
+---
+
+## Contact
+
+LinkedIn: https://www.linkedin.com/in/aryan-nakade-046202338/
+  Email: aryannakade123@gmail.com
